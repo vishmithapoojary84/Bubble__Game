@@ -10,7 +10,10 @@ Timer Mechanism: A countdown timer adds excitement and urgency to the game. The 
 Responsive Design: The game interface is optimized for various devices, ensuring a seamless experience across desktops, tablets, and mobile phones. Media queries adapt the layout and font sizes to different screen sizes, providing an enjoyable experience for all users.
 
 Dynamic UI Updates: The game UI updates dynamically based on user interactions. Correct hits increase the score, while incorrect clicks are simply ignored, ensuring a smooth and engaging gameplay experience.
+
 Try the demo below to see it in action:https://vishmithapoojary84.github.io/Bubble__Game/
+
+
 Technical Details:
 
 Front-End Technologies:
