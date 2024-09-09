@@ -1,0 +1,257 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gilory';
+}
+html,body{
+  width: 100%;
+  height: 100%;
+
+}
+#main{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(160, 239, 160);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#panel{
+  width: 80%;
+  height: 90%;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#ptop{
+  display: flex;
+  color:#fff;
+  padding: 0px 30%;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(72, 104, 72);
+}
+.elem{
+  width: 10%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+}
+.elem h2{
+  font-weight: 500;
+  font-size: 22px;
+}
+.box{
+  padding: 10px 20px;
+ color:rgb(18,119,57);
+background-color: #fff;
+  border-radius: 5px;
+
+  font-weight: 600;
+  font-size: 20px;
+} 
+#pbtm{
+  width: 100%;
+padding: 20px;
+height: calc(100% - 100px);
+display: flex;
+gap:10px;
+flex-wrap: wrap;
+
+}
+.bubble{
+  width: 40px;
+  height: 40px;
+  background-color: rgb(72, 104, 72);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+
+}
+.bubble:hover{
+  cursor: pointer;
+  background-color: rgb(38, 87, 38);
+  transform: scale(1.2);
+}
+  #pbtm .over{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 40px;
+    color:rgb(18,119,57);
+    margin-left: 25%;
+    margin-top: 10%;
+    margin-bottom: 0;
+  }
+ #pbtm button{
+    padding: 10px 20px;
+    color:rgb(18,119,57);
+   background-color: #fff;
+     border-radius: 5px;
+   
+     font-weight: 600;
+     font-size: 20px;
+     height: 60px;
+     width: 180px;
+     /* margin-top: 25%; */
+     margin-left: 40%;
+     margin-top: 3px;
+   }
+    
+
+ 
+
+  
+  button:hover{
+    color:#fff;
+    background-color: rgb(18,119,57);
+  }
+  /* * Media Queries for Large Devices (e.g., Desktops, Large Tablets) */ 
+
+@media (min-width: 1200px) {
+  #panel {
+    width: 80%; /* Reduce width to avoid stretching */
+  }
+
+  #ptop {
+    height: 100px; /* Maintain height for large screens */
+  }
+
+  .elem h2 {
+    font-size: 22px; /* Maintain larger font size for large screens */
+  }
+
+  .box {
+    font-size: 20px; /* Maintain larger font size for large screens */
+  }
+}
+
+/* Media Queries for Mobile Devices */
+
+@media (max-width: 768px) {
+  #ptop {
+    flex-direction: column;
+    height: auto;
+    padding: 0 5%;
+  }
+
+  .elem {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .elem h2 {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .box {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  #pbtm {
+    padding: 10px;
+    height: auto; /* Adjust height for smaller screens */
+  }
+
+  .bubble {
+    width: 25px; /* Adjust size for smaller screens */
+    height: 25px;
+  }
+
+  #pbtm .over {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+
+  #pbtm button {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    height: 40px; /* Adjust height for smaller screens */
+    max-width: 150px; /* Adjust max-width for smaller screens */
+  }
+}
+
+/* Media Queries for Very Small Devices (e.g., Portrait Phones) */
+
+/* Media Queries for Very Small Devices (e.g., Portrait Phones) */
+@media (max-width: 480px) {
+  #panel {
+    width: 95%; /* Adjust width to fit smaller screens */
+    height: 95%; /* Adjust height to fit smaller screens */
+  }
+
+  #ptop {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px;
+  }
+
+  .elem {
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px; /* Reduce gap between elements */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  }
+
+  .elem h2 {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .box {
+    font-size: 12px; /* Further reduce font size */
+    padding: 8px 16px; /* Adjust padding */
+  }
+
+  #pbtm {
+    padding: 10px;
+    height: auto;
+    display: flex;
+    /* flex-direction: column; Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+  }
+
+  .bubble {
+    width: 20px;
+    height: 20px;
+    font-size: 12px; /* Adjust font size inside bubbles */
+  }
+
+  #pbtm .over {
+    font-size: 20px; /* Adjust font size for very small screens */
+    margin: 10px 0; /* Margin adjustments */
+  }
+
+  #pbtm button {
+    font-size: 14px; /* Reduce font size */
+    height: 35px; /* Reduce height */
+    max-width: 120px; /* Reduce max-width */
+    margin: 10px; /* Margin adjustments */
+  }
+
+  /* Align timer, score, and hit number in a row */
+  #ptop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+  }
+
+  #ptop .elem {
+    width: auto; /* Adjust width to fit the screen */
+    gap: 10px; /* Adjust gap between elements */
+  }
+
+  #ptop .box {
+    font-size: 12px; /* Adjust font size */
+  }
+}
